@@ -48,7 +48,7 @@ for( int i=0; i<20; i++)
 	SDL_Event ev;
 	SDL_PollEvent( &ev);
 	//SDL_PumpEvents();
-	printf( ":0x%x:%i:\n", ev.type, ev.type);
+	printf( ":0x%x:%i:  --%i--\n", ev.type, ev.type, ev.motion.which);
 }
     SDL_Delay(3000);  // Pause execution for 3000 milliseconds, for example
 
