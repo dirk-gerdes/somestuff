@@ -1,7 +1,7 @@
 #LDFLAGS:= -lboost_system -lboost_thread  -L/usr/local/lib
-LDFLAGS:= 
+LDFLAGS:=-lpthread 
 #-ldirectfb
-CFLAGS:= 
+CFLAGS:= --std=c++11
 #-I/usr/local/include/directfb
 CC := g++ 
 
