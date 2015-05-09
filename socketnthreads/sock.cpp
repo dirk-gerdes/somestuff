@@ -6,6 +6,7 @@
 #include <netdb.h>
 #include <thread>
 #include <unistd.h>
+#include <string.h>
 
 using namespace std;
 
@@ -44,8 +45,13 @@ int main()
 	}
 	thread t( receive);
 
+	cout << ".." << endl;
+
+	sleep(1);
 	close ( sock);
+	cout << ".." << endl;
 	t.join();
+	cout << ".." << endl;
 
 	cout << "done" << endl;
 
